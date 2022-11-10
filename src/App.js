@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import ButtonPanel from "./ButtonPanel";
 class App extends Component {
+
+  calculateSomething() {
+    console.log('hello');
+  }
+
   render() {
     const mystyle = {
       color: "black",
@@ -10,7 +14,15 @@ class App extends Component {
       fontFamily: "Arial"
     };
     return (
-      <h1 style={mystyle} >Magenta</h1>
+      <div>
+        <h1 style={mystyle} >Magenta</h1>
+          <form action="">
+          <p>dkjhdfkdsh</p>
+           <input type="text" name="soso" id="" />
+          </form>
+
+          <button onClick={this.calculateSomething}> Click Me</button>
+      </div>
     );
   }
 
